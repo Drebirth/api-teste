@@ -17,12 +17,12 @@ import api.teste.entity.Usuario;
 import api.teste.service.UsuarioService;
 
 @RestController
-@RequestMapping("/api")
+@RequestMapping("/usuario")
 @CrossOrigin("http://localhost:4200")
 public class UsuarioController {
     
     @Autowired
-    public UsuarioService usuario;
+    private UsuarioService usuario;
 
     public UsuarioController(UsuarioService usuario){
         this.usuario = usuario;
